@@ -1,0 +1,68 @@
+app_name: TFT Rank Notifier
+app_subtitle: Receive notifications of your favorite players ladder progress
+app_download: https://apps.apple.com/app/id
+app_github: 
+app_id: 
+email: kevin.renella@gmail.com
+app_icon: /assets/icon.png
+favicon: /assets/icon.png
+
+made_by: Made by [Drusy](https://github.com/drusy)
+
+links:
+  - title: Donation
+    url: https://paypal.me/kevinrenella
+  - title: Exile Companion
+    url: https://drusy.github.io/exile-companion
+  - title: Vampire Survivors Companion
+    url: https://drusy.github.io/vampire-survivors-companion
+
+app_description: |
+    Unofficial Teamfight Tactics companion app.  
+    
+    ## Features
+    
+    - Player current ladder rank
+    - Player last played game date
+    - Push (local) notifications of your favorite players ranks
+    
+    ## Disclaimer
+    
+    This app is not the official Teamfight Tactics (TFT) application and is not related to Riot Games in any way.  
+    This app is a helper, it's not a game.
+
+####################################################
+### Jekyll Configuration. No need to touch this. ###
+####################################################
+
+plugins:
+  - jekyll-postcss
+
+sass:
+  load_paths:
+    - _sass
+    - node_modules
+
+include: ["node_modules/tailwindcss"]
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - package-lock.json
+  - README.md
+  - postcss.config.js
+  - .gitignore
+  - node_modules
+
+markdown: kramdown
+
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+defaults:
+  - scope:
+      path: "assets/screenshots"
+    values:
+      screenshot: true
